@@ -14,11 +14,11 @@ author: Fábio Madeira
 # jekyller.github.io - all contents run on /vitae/
 # for a normal use at the base of the server change it to "/"
 baseurl: /
-title: Alesis Manzano's Resume
+title: CV Alesis Manzano
 name: Alesis Manzano
 email: alesismanzano@gmail.com
 email_full: mailto:alesismanzano@gmail.com
-website: github.io/alesisjoan
+website: alesisjoan.github.io
 website_full: https://alesisjoan.github.io
 github: alesisjoan
 twitter:
@@ -27,7 +27,7 @@ tel: +5492614698249
 tel_full: tel:+5492614698249
 google_maps:
 address:
-  street: Lamadrid *** (ask for more info)
+  street: Lamadrid ***
   postcode: M5500
   city: Mendoza
   country: Argentina

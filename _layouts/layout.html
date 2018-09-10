@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.name }}'s Résumé">
-    <meta name="author" content="{{ site.name }} @{{ site.twitter }}">
+    <meta name="author" content="{{ site.name }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -25,10 +25,12 @@
 <body>
 <div class="container">
     <header class="three columns">
+
         <img src="{{ site.baseurl }}static/img/profile.png" class="me">
         <h1>{{ site.name }}</h1>
+        <p>Edad: {{ site.time | date: '%Y' | minus:1990 }}</p>
         <p>
-            <a href="{{ site.tel_full }}">{{ site.tel }}</a>
+            <a href="{{ site.tel_full }}">tel: {{ site.tel }}</a>
         </p>
         <address>
             <a href="{{ site.google_maps }}">
@@ -46,12 +48,17 @@
             <a href="https://github.com/{{ site.github }}"><i class="fa fa-github"></i> Github</a> /
             <a href="https://linkedin.com/in/{{ site.linkedin }}"><i class="fa fa-linkedin"></i> Linkedin</a>
         </p>
+        <p> <a href="{{ site.baseurl }}assets/Alesis_Manzano_CV.pdf"><button type="button" class="btn btn-default" aria-label="Left Align"><span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span> PDF Download</button></a></p>
+
+
     </header>
     <div class="thirteen columns clearfix">
 
         {{ content }}
 
     <footer class="thirteen columns">
+        <p>Hoy: {{ site.time | date: '%d/%m/%Y'}}</p>
+        <p>Última revisión: {{ site.time | date: '%d/%m/%Y'}}</p>
         <p>© All rights reserved. Powered by <a href="http://jekyllrb.com/">Jekyll</a> and
             <a href="https://www.github.com/jekyller/vitae">vitae</a> with ♥</p>
     </footer>
